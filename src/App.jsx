@@ -1,7 +1,15 @@
-import "./App.css";
+import React from "react";
+import LeftScreen from "./screen/LeftScreen";
+import RightScreen from "./screen/RightScreen";
+import "./app.scss";
 
-function App() {
-  return <div></div>;
-}
+const App = () => {
+  return (
+    <div className="container">
+      <LeftScreen />
+      <RightScreen />
+    </div>
+  );
+};
 
 export default App;

@@ -1,0 +1,57 @@
+.left-screen_container {
+  align-items: center;
+  text-align: center;
+  .left-screen__header {
+    font-size: 33px;
+    font-weight: 800;
+    padding: 30px;
+  }
+  .left-screen__content {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: auto;
+    .left-screen_note_content {
+      display: flex;
+      gap: 30px;
+      padding: 5px;
+      .left-screen_btn {
+        background: blue;
+        border: none;
+        border-radius: 50%;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .left-screen_note_name {
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+    .left-screen_note_content:hover {
+      background: #2f2f2f2b;
+    }
+  }
+
+  .left-screen_add_btn {
+    background: blue;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 29px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+  }
+}
