@@ -14,16 +14,29 @@ function LeftScreen() {
     { id: v4(), icon: "MN", name: "My Notes" },
     { id: v4(), icon: "MN", name: "My Notes" },
     { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
+    { id: v4(), icon: "MN", name: "My Notes" },
   ];
   return (
     <div className="left-screen_container">
       <div className="left-screen__header">Pocket Notes</div>
-      <div className="left-screen__content">
+      <div className="left-screen__content" id="left-screen__content">
         {obj.map((item) => {
           return (
-            <div id={item.id} className="left-screen_note_content">
+            <div>
+              <div id={item.id} className="left-screen_note_content">
               <button className="left-screen_btn">{item.icon}</button>
               <p className="left-screen_note_name">{item.name}</p>
+            </div>
             </div>
           );
         })}

@@ -1,0 +1,41 @@
+.right-screen_container {
+  background: #dae5f4;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  .right-screen_body{
+    text-align: center;
+    .right-screen_body__header{
+        font-size: 24px;
+        img{
+          width: 33%;
+          position: relative;
+          top: 11rem;
+        }
+    }
+    .right-screen_body_content{
+      font-size: 18px;
+      text-align: center;
+      padding: 0 18rem 0 18rem;
+      position: relative;
+      top: 11rem;
+        h1{
+          padding-bottom: 2rem;
+        }
+
+    }
+    .right-screen_body_footer{
+        position: absolute;
+        font-size: 14px;
+        align-items: center;
+        text-align: center;
+        display: inline-flex;
+        gap: 5px;
+        bottom: 10px;
+        img{
+            height: 12px;
+        }
+    }
+  }
+}

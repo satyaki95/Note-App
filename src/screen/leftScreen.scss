@@ -1,6 +1,6 @@
 .left-screen_container {
-  align-items: center;
   text-align: center;
+  height: 80vh;
   .left-screen__header {
     font-size: 33px;
     font-weight: 800;
@@ -9,7 +9,7 @@
   .left-screen__content {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100%;
     overflow: auto;
     .left-screen_note_content {
       display: flex;
@@ -36,6 +36,25 @@
     .left-screen_note_content:hover {
       background: #2f2f2f2b;
     }
+  }
+
+  #left-screen__content::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  #left-screen__content::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  #left-screen__content::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  #left-screen__content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid #d9d9d9;
+    background-color: white;
+  }
+  #left-screen__content::-webkit-scrollbar-track {
+    background-color: #d9d9d9;
+    border-radius: 8px;
   }
 
   .left-screen_add_btn {
